@@ -27,7 +27,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const files = await readdir(rankingsDir);
 
       const rankingFiles = files
-        .filter((file) => file.endsWith(".json") && !file.startsWith("template"))
+        .filter(
+          (file) =>
+            file.endsWith(".json") && !file.startsWith("template") && file !== "mvps.json"
+        )
         .sort()
         .reverse(); // Sorts to get the latest week first
 
@@ -44,12 +47,29 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Validate the data against the schema
       const validatedData = TeamSchema.array().parse(rawData);
 
+      // Attempt to read MVPs from a separate file (rankings/mvps.json)
+      const mvpsPath = join(rankingsDir, "mvps.json");
+      let mvpsMap: Record<string, string> = {};
+      try {
+        const mvpsRaw = await readFile(mvpsPath, "utf-8");
+        mvpsMap = JSON.parse(mvpsRaw || "{}");
+      } catch (err) {
+        // It's fine if the file doesn't exist or is invalid; just continue without MVPs
+        // console.warn(`No mvps file found or failed to read: ${err}`);
+        mvpsMap = {};
+      }
+
+      // Merge MVP into each team object if present in mvpsMap
+      const teamsWithMvps: Team[] = validatedData.map((t) => ({
+        ...t,
+        mvp: mvpsMap[t.id] || undefined,
+      }));
       // Extract date from filename
       const lastUpdated = extractDateFromFilename(latestRankingFileName);
 
-      // Return both teams and metadata
+      // Return both teams and metadata (teams include optional mvp now)
       const response = {
-        teams: validatedData,
+        teams: teamsWithMvps,
         lastUpdated,
       };
 

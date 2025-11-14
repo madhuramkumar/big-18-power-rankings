@@ -76,6 +76,11 @@ export default function RankingItem({ team }: RankingItemProps) {
               {team.record}
             </p>
           )}
+          {team.mvp && (
+            <p className="text-sm text-muted-foreground mb-2" data-testid={`team-mvp-${team.id}`}>
+              <span className="font-medium text-foreground">MVP:</span> {team.mvp}
+            </p>
+          )}
           <p 
             className="text-base leading-relaxed text-muted-foreground"
             data-testid={`team-blurb-${team.id}`}

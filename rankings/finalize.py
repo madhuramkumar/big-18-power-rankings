@@ -66,7 +66,11 @@ def get_records(url: str) -> Dict[str, str]:
 def get_active_rankings_file() -> Optional[str]:
     """Find the active rankings JSON file (excludes template.json)."""
     json_files = glob.glob(os.path.join(os.path.dirname(__file__), "*.json"))
-    rankings_files = [f for f in json_files if not f.endswith("template.json")]
+    # Exclude template and mvps files from the list of ranking files
+    rankings_files = [
+        f for f in json_files
+        if not os.path.basename(f).endswith("template.json") and not os.path.basename(f).endswith("mvps.json")
+    ]
     
     if len(rankings_files) == 0:
         print("Error: No active rankings file found.")
