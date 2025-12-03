@@ -1,0 +1,164 @@
+[
+    {
+        "id": "mich",
+        "name": "Michigan",
+        "logoUrl": "michigan.png",
+        "rank": 1,
+        "record": "7-0 (0-0), TRank: 1, KP: 1",
+        "blurb": "Well..we sure found out more about this team at Players Era. Don't think the offense will sustain this level but defense should travel. The road win at TCU is also aging extremely well.",
+        "trend": 3
+    },
+    {
+        "id": "pur",
+        "name": "Purdue",
+        "logoUrl": "purdue.png",
+        "rank": 2,
+        "record": "7-0 (0-0), TRank: 5, KP: 2",
+        "blurb": "Took care of business in the Bahamas but Michigan just did more this past week.",
+        "trend": -1
+    },
+    {
+        "id": "msu",
+        "name": "Michigan State",
+        "logoUrl": "michigan-state.png",
+        "rank": 3,
+        "record": "7-0 (0-0), TRank: 16, KP: 15",
+        "blurb": "Just continue to bludgeon teams. Might have the highest floor of any team in the conference but still lacking a wing threat.",
+        "trend": -1
+    },
+    {
+        "id": "ill",
+        "name": "Illinois",
+        "logoUrl": "illinois.png",
+        "rank": 4,
+        "record": "6-2 (0-0), TRank: 12, KP: 17",
+        "blurb": "This team doesn't really have an identity and that's concerning. Don't really defend that well, don't shoot well and the rebounding the past two weeks has been suspect.",
+        "trend": -1
+    },
+    {
+        "id": "iowa",
+        "name": "Iowa",
+        "logoUrl": "iowa.png",
+        "rank": 5,
+        "record": "7-0 (0-0), TRank: 20, KP: 21",
+        "blurb": "Bennet Stirtz is my darkhorse B10 POY if Braden Smith slips up.",
+        "trend": 1
+    },
+    {
+        "id": "wis",
+        "name": "Wisconsin",
+        "logoUrl": "wisconsin.png",
+        "rank": 6,
+        "record": "5-2 (0-0), TRank: 33, KP: 28",
+        "blurb": "Really disappointing loss to TCU. Boyd and Blackwell have been good but the supporting cast, not so much.",
+        "trend": -1
+    },
+    {
+        "id": "ind",
+        "name": "Indiana",
+        "logoUrl": "indiana.png",
+        "rank": 7,
+        "record": "6-0 (0-0), TRank: 22, KP: 20",
+        "blurb": "The win against Marquette is losing luster every day.",
+        "trend": 0
+    },
+    {
+        "id": "neb",
+        "name": "Nebraska",
+        "logoUrl": "nebraska.png",
+        "rank": 8,
+        "record": "7-0 (0-0), TRank: 39, KP: 41",
+        "blurb": "Pryce Sandfort has been a pleasant surprise. ",
+        "trend": 3
+    },
+    {
+        "id": "nu",
+        "name": "Northwestern",
+        "logoUrl": "northwestern.png",
+        "rank": 9,
+        "record": "5-2 (0-0), TRank: 54, KP: 53",
+        "blurb": "Chris Collins finally has a big man that can score in Arrinten Page. This team will struggle with consistency but they are going to be a tough out. ",
+        "trend": 1
+    },
+    {
+        "id": "wash",
+        "name": "Washington",
+        "logoUrl": "washington.png",
+        "rank": 10,
+        "record": "5-2 (0-0), TRank: 62, KP: 57",
+        "blurb": "Moving this team down for the sole reason that their non-conference schedule is a joke. Being off for 9 days in mid-November makes no sense.",
+        "trend": -2
+    },
+    {
+        "id": "ucla",
+        "name": "UCLA",
+        "logoUrl": "ucla.png",
+        "rank": 11,
+        "record": "5-2 (0-0), TRank: 21, KP: 32",
+        "blurb": "Bit concerning that Mick Cronin had to bench four starters to send a message. This is the one of the oldest teams in the sport...",
+        "trend": -2
+    },
+    {
+        "id": "usc",
+        "name": "USC",
+        "logoUrl": "usc.png",
+        "rank": 12,
+        "record": "7-0 (0-0), TRank: 27, KP: 26",
+        "blurb": "Won the Great Value Maui Invitational but don't think this team has the horses to survive in conference play.",
+        "trend": 1
+    },
+    {
+        "id": "osu",
+        "name": "Ohio State",
+        "logoUrl": "ohio-state.png",
+        "rank": 13,
+        "record": "6-1 (0-0), TRank: 25, KP: 33",
+        "blurb": "Looked very unimpressive in a close win over Notre Dame. Just not seeing the vision this year for this team.",
+        "trend": 1
+    },
+    {
+        "id": "ore",
+        "name": "Oregon",
+        "logoUrl": "oregon.png",
+        "rank": 14,
+        "record": "4-3 (0-0), TRank: 60, KP: 85",
+        "blurb": "This is just a boring team.",
+        "trend": -2
+    },
+    {
+        "id": "md",
+        "name": "Maryland",
+        "logoUrl": "maryland.png",
+        "rank": 15,
+        "record": "5-3 (0-0), TRank: 94, KP: 93",
+        "blurb": "Played a tough schedule in Vegas but the defense just got obliterated. Going to be a long year.",
+        "trend": 1
+    },
+    {
+        "id": "minn",
+        "name": "Minnesota",
+        "logoUrl": "minnesota.png",
+        "rank": 16,
+        "record": "4-4 (0-0), TRank: 99, KP: 115",
+        "blurb": "Three straight Ls in non-conference play is never a good sign especially when you are not playing ranked teams.",
+        "trend": -1
+    },
+    {
+        "id": "psu",
+        "name": "Penn State",
+        "logoUrl": "penn-state.png",
+        "rank": 17,
+        "record": "6-1 (0-0), TRank: 100, KP: 104",
+        "blurb": "Big fan of Kayden Mingo but that's about it.",
+        "trend": 0
+    },
+    {
+        "id": "ru",
+        "name": "Rutgers",
+        "logoUrl": "rutgers.png",
+        "rank": 18,
+        "record": "5-3 (0-0), TRank: 129, KP: 122",
+        "blurb": "Not surprising but a brutal showing in Vegas. I don't see how Pikiell survives this season with his job.",
+        "trend": 0
+    }
+]
